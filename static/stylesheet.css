@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Coves Light';
+  src: url("Coves Light.otf"); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'Coves Bold';
+  src: url("Coves Bold.otf"); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'Kayak Sans Light';
+  src: url("Kayak Sans Light.otf"); /* IE9 Compat Modes */
+}
+@font-face {
+  font-family: 'Kayak Sans Regular';
+  src: url("Kayak Sans Regular.otf"); /* IE9 Compat Modes */
+}
+
+.home-sec{
+    height: 33vh;
+}
+
+#coder{
+    background-image: url("resized/ioi-bw.jpg");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#coxswain{
+    background-image: url("resized/crew-bw.jpg");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#trumpeter{
+    background-image: url("resized/brass-bw.jpg");
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.social{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.description{
+    font-family: 'Kayak Sans Light';
+    color: rgba(240,240,240, 1);
+}
+
+.navtitle{
+    font-family: 'Kayak Sans Regular';
+}
+
+#aboutImage{
+    background-image: url("resized/robotics.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hider{
+    background-color: white
+}
+
+.about-section{
+    margin-top: 50px;
+}
+
+.about-text{
+    font-size: 18px;
+}

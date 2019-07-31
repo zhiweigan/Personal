@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ static("stylesheet.css") }}">
+
+    <meta charset="UTF-8">
+    <title>Zhi Wei Gan: {% block title %}{% endblock %}</title>
+    <div class="container">
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light {% block navsetting %}bg-transparent{% endblock %}" >
+          <a class="navbar-brand navtitle" href="#">Z</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+              <a class="nav-link nav-item {% block home %}{% endblock %}" href={{url('home')}}>Home</a>
+              <a class="nav-link nav-item {% block about %}{% endblock %}" href={{url('about')}}>About</a>
+{#              <a class="nav-link nav-item {% block projects %}{% endblock %}" href={{url('home')}}>Projects</a>#}
+{#              <a class="nav-link nav-item {% block blog %}{% endblock %}" href={{url('home')}}>Blog</a>#}
+            </ul>
+          </div>
+        </nav>
+    </div>
+
+
+</head>
+<body>
+<div class="container-fluid h-100">
+    {% block content %}  {% endblock %}
+</div>
+
+</body>
+<footer>{% block foot %}{% endblock %}</footer>
+</html>

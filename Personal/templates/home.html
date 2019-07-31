@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block home %} active {% endblock %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid" style="height: 100vh">
+    <div class="row h-100 justify-content-center align-items-center">
+        <div class="col-3 text-center">
+            <h1 class="display-4">
+                Hi!
+            </h1>
+            <h2 class="display-4">
+                I'm Zhi.
+            </h2>
+
+            <div class="row justify-content-center">zgan@mit.edu</div>
+            <div class="row justify-content-center">+1 (646) 286-9289</div>
+            <div class="row justify-content-center">
+                <a href="https://www.facebook.com/zhiwei.gan.5" class="fa fa-facebook social"></a>
+                <a href="https://www.instagram.com/zhi_wei.gan/" class="fa fa-instagram social"></a>
+                <a href="https://www.linkedin.com/in/zhi-g-587629121" class="fa fa-linkedin social"></a>
+            </div>
+
+        </div>
+        <div class="col-9 h-100">
+            <h2 class="text-center description">
+                <div class="row home-sec justify-content-center align-items-center" id="coder">
+                    <div class="col-6 h-100 overlay">
+                        <div class="row h-100 justify-content-center align-items-center">
+                            <h1 class="display-3">Coder</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row home-sec justify-content-center align-items-center" id="coxswain">
+                    <div class="col-6 h-100 overlay" >
+                        <div class="row h-100 justify-content-center align-items-center" >
+                            <h1 class="display-3">Coxswain</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row home-sec justify-content-center align-items-center" id="trumpeter">
+                    <div class="col-6 h-100 overlay">
+                        <div class="row h-100 justify-content-center align-items-center">
+                            <h1 class="display-3">Trumpeter</h1>
+                        </div>
+                    </div>
+                </div>
+            </h2>
+
+        </div>
+  </div>
+</div>
+
+
+{% endblock %}
