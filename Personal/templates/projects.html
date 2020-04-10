@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+
+{% block projects %} active {% endblock %}
+{% block title %}Projects{% endblock %}
+{% block navsetting %}bg-white{% endblock %}
+{% block content %}
+
+    <div class="container" style="height:5vh"></div>
+
+    <div class="container" style="height: 33vh">
+
+
+        <div class="col-12 h-100">
+            <div class="row h-100 justify-content-center align-items-center" id="aboutImage">
+                <div class="col-12 h-100 overlay">
+                    <div class="row h-100 justify-content-center align-items-center">
+                        <h1 class="description display-4">
+                            About Me
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container about-section">
+        <div class="row">
+            <h3>
+                Hi!
+            </h3>
+        </div>
+        <div class="row">
+            <div class="col-7">
+                <p class="lead">
+                    I'm Zhi Wei Gan, a freshman at MIT from Malaysia. I am a computer science enthusiast, musician
+                    and coxswain. I am hoping to major in Math and Computer Science with a concentration in Music.
+                    This website will contain a little bit about myself and things I have done for the past 18 years, and in the future perhaps a list of projects and maybe even a blog.
+                    Feel free to contact me if you have any questions!
+                </p>
+            </div>
+            <div class="col-3">
+
+                <div class="row h-100 justify-content-center align-items-center">
+                    <h5>
+                        Download My Resume:
+                    </h5>
+                    <div class="col-3">
+                        <a href="{{static("Resume.pdf")}}" class="btn btn-primary btn-lg" role="button" aria-pressed="true">Download</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container about-section">
+
+        <div class="row">
+            <div class="col-5">
+                <div class="row">
+                    <h3>
+                        My Computer Science Adventures
+                    </h3>
+                </div>
+                <p class="about-text">
+                    I have always been fascinated by the applications of Computer Science. During the summers of 2015
+                    and 2016, I interned at AESTE, a chip design company. I was exposed to
+                    cryptography and electrical engineering from an industry perspective. I helped to develop a
+                    Certificate Management System for the company’s web app using OpenSSL, applying knowledge of both
+                    algorithms and web development. In the summer of 2018, I attained a research internship at a Deep
+                    Learning Laboratory at Universiti Tunku Abdul Rahman, where I developed a mobile app to house a wood
+                    identification model. I also learnt about different types of neural networks and their applications.
+                    I also built this website from scratch with Django and Bootstrap 4.
+                </p>
+            </div>
+            <div class="col-7">
+                <dl class="row">
+                    <dt class="col-sm-3">Languages</dt>
+                    <dd class="col-sm-9">Python, C++, HTML, CSS</dd>
+
+
+                    <dt class="col-sm-3">Awards and Distinctions</dt>
+                    <dd class="col-sm-9">
+                        <p>2017 International Olympiad in Informatics: Qualified</p>
+                        <p>2017 Asia-Pacific International Olympiad: Honorable Mention</p>
+                        <p>2017 Malaysian Computing Olympiad: Gold</p>
+                        <p>2017 UKMT Intermediate: Gold, Best in Year & Best in School Award</p>
+                        <p>Choate Rosemary Hall Advanced Computer Science Award</p>
+                    </dd>
+
+                    <dt class="col-sm-3">Leadership Experience</dt>
+                    <dd class="col-sm-9">
+                        <p>Alice Smith School Code Club Co-President and Founder</p>
+                        <p>Co-president for Choate Programming Union</p>
+                        <p>Organizer for MAHacks</p>
+                    </dd>
+
+                    <dt class="col-sm-3">Research and Internship Experience</dt>
+                    <dd class="col-sm-9">
+                        <p>Universiti Tunku Abdul Rahman, A Deep Learning Approach to Texture Generation 2018</p>
+                        <p>AESTE Works (M) Sdn. Bhd. 2015, 2016</p>
+                    </dd>
+                </dl>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container about-section">
+
+    <div class="row justify-content-center align-items-center">
+        <div class="col-6 text-center " style="margin-top: 5vh; margin-bottom: 10vh;">
+            <img class="img-fluid" src="{{ static("resized/jazz.jpg") }}" alt="Choate Rosemary Hall Jazz Ensemble">
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <h3>
+                    How Music Has Impacted Me
+                </h3>
+            </div>
+            <p class="about-text">I have been playing the trumpet since 3rd grade. I have performed in my high school’s
+                orchestra, jazz ensemble and brass quintet. Playing in musical ensembles has given me a chance to
+                connect with my peers
+                emotively and to be totally immersed in the musical rapport we create. I have also performed Handel's
+                Messiah as a part of a professional baroque orchestra.
+                As a project for my computer science class, I made a Markov Chain Music Generator, which took 15 Bach
+                Inventions and attempted to create a new one in a desired key.
+                These experiences have improved my discipline and time management skills, and I also have a greater
+                sense of appreciation for music. I enjoy listening to
+                Jazz, Classical, Metal and EDM.
+            </p>
+
+            <dl class="row">
+                <dt class="col-sm-3">Achievements</dt>
+                <dd class="col-sm-9">
+                    <p>2016 ABRSM Grade 8 Trumpet Exam: Distinction</p>
+                    <p>2015 AIMS Young Musician Award: Finalist</p>
+                </dd>
+
+                <dt class="col-sm-3">Alice Smith School Ensembles</dt>
+                <dd class="col-sm-9">
+                    <p>Orchestra, 5 Years</p>
+                    <p>Jazz Band, 5 Years</p>
+                    <p>Brass Quintet, 2 Years</p>
+                    <p>Musical Band, 3 Years: Sweeney Todd, Oh What a Lovely War, Bugsy Malone</p>
+                </dd>
+
+                <dt class="col-sm-3">Choate Rosemary Hall Ensembles</dt>
+                <dd class="col-sm-9">
+                    <p>Symphony Orchestra, 2 Years</p>
+                    <p>Jazz Band, 2 Years</p>
+                    <p>Brass Quintet, 2 Years</p>
+                </dd>
+
+
+            </dl>
+
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <img class="img-fluid" src="{{ static("resized/orch.jpg") }}" alt="Choate Rosemary Hall Orchestra">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container about-section">
+        <div class="row">
+            <h3>
+                Coxing
+            </h3>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <p class="about-text">
+                Rowing is the perfect sport for a STEM enthusiast to analyze rhythms. Back on land, training is done
+                primarily on rowing machines which record data about each stroke pulled. As such, data is abundant. I
+                brought my passion for computer science into the sport by helping to devise a system to automate the tedious
+                task of data collection by coxswains, simultaneously opening up a plethora of new methods for coaches to
+                find rowers who row best together.
+                </p>
+            </div>
+            <div class="col-6">
+                <img class="img-fluid" src="{{ static("resized/cox.jpg") }}" alt="Coxswains">
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
+
+{% block foot %}
+    <div class="row h-100 justify-content-center align-text-bottom" style="height: 20vh; margin-top: 10vh;">
+            Photo Credits: Choate Flickr
+    </div>
+{% endblock %}
